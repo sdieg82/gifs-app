@@ -4,7 +4,6 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
 import { HomePageComponent } from './gifs/pages/home-page/home-page.component';
 import { SearchBoxComponent } from './gifs/components/search-box/search-box.component';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http'; // Asegúrate de importar esto
 
 @Component({
   selector: 'app-root',
@@ -15,10 +14,11 @@ import { HttpClientModule } from '@angular/common/http'; // Asegúrate de import
     HomePageComponent,
     SearchBoxComponent,
     CommonModule,
-    HttpClientModule, // Asegúrate de incluir HttpClientModule aquí
+   
+     // Asegúrate de incluirlo aquí
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'] // Corrige styleUrl a styleUrls
 })
 export class AppComponent {
   title = 'gifs-app';
