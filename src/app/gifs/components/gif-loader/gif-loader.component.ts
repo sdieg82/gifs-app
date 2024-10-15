@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from '../../../interfaces/gif.interfaces';
 import { CommonModule } from '@angular/common';
+import { LazyImageComponent } from "../../../shared/components/lazy-image/lazy-image.component";
 
 @Component({
   selector: 'app-gif-loader',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LazyImageComponent],
   templateUrl: './gif-loader.component.html',
   styleUrl: './gif-loader.component.css',
 })
